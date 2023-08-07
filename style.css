@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,700;1,100;1,600&display=swap');
+
+:root{
+    --crimson:red;
+    --black:black;
+    --light-bg:#1a1a1a;
+    --white:#fff;
+    --light-color:#aaa;
+    --box-shadow:.5rem  1rem rgb(0,0,0,.7);
+    
+}
+
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: var(--black);
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--crimson);
+    border-radius: 5rem;
+}
+
+body {
+    background: var(--black);
+    padding-bottom: 6.5rem;
+}
+
+section{
+    padding:5rem 9%;
+}
+
+.heading{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 6vw;
+    color: var(--white);
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+}
+
+.heading span{
+    text-transform: uppercase;
+    color: var(--crimson);
+}
+
+
+
+
+
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: var(--crimson);
+    padding: .7rem;
+    font-size: 1.7rem;
+    color: var(--white);
+    padding-left: 2rem;
+
+}
+
+.btn i{
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    font-size: 1.7rem;
+    text-align: center;
+    background: var(--white);
+    color: var(--crimson);
+    border-radius: 50%;
+    margin-left: 1rem;
+    transition: .3s linear; 
+}
+
+.btn:hover i{
+    margin-left: 2rem;
+}
+
+
+
+
+
+
+.logo{
+    width: auto;
+    height: 65px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left:0;
+    right: 0;
+    display: flex;
+    text-align: center;
+    z-index: 1000;
+    align-items: flex-end;
+}
+
+.navbar a {
+    padding: 2rem;
+    font-size: 2rem;
+    background: var(--light-bg);
+    flex: 1;
+    color: var(--white);
+}
+
+.navbar a i {
+    color: var(--crimson);
+    padding-right: 0.5rem;
+}
+
+.navbar a:hover {
+    background: var(--crimson);
+}
+
+.navbar a:hover i {
+    color: var(--white);
+}
+
+
+
+
+
+.home {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+    min-height: calc(100vh - 6.5rem);
+}
+
+.home .image {
+    flex: 1 1 42rem;
+    text-align: center;
+    padding-top: 100px;
+
+}
+
+.home .image img {
+    width: 50rem;
+    height: auto;
+    
+}
+
+.content {
+    flex: 1 1 42rem;
+}
+
+.content h3{
+    color: #fff;
+    font-size: 4rem;
+    padding-bottom: .5rem;
+}
+
+.content span {
+    font-size: 3rem;
+    color: red;
+    padding: .5rem 0;
+    display: block;
+}
+
+.content p{
+    font-size: 1.5rem;
+    color: #aaa;
+    padding: 1rem 0;
+    line-height: 2;
+
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2rem;
+}
+
+.about .row .info-container{
+    flex: 1 1 42rem;
+}
+
+.about .row .info-container{
+    flex: 1 1 42rem;
+}
+
+.about .row .info-container h1{
+    font-size: 3rem;
+    color: var(--white);
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+
+.about .row .info-container .box-container{
+    padding: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+}
+
+.about .row .info-container .box-container .box{
+    flex: 1 1 20rem;
+}
+
+.about .row .info-container .box-container .box h3{
+    font-size: 1.7rem;
+    color: var(--white);
+    padding: 1rem 0;
+    font-weight: normal;
+}
+
+.about .row .info-container .box-container .box h3 span{
+    color: var(--light-color);
+    font-weight: lighter;
+}
+
+
+
+
+
+.about .row .count-container{
+    flex: 1 1 42rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.about .row .count-container .box{
+    flex: 1 1 20rem;
+    padding: 3rem 4rem;
+    border-radius: .5rem;
+    background: var(--light-bg);
+    box-sizing: var(--box-shadow);
+}
+
+.about .row .count-container .box h3{
+    font-size: 5rem;
+    color: var(--crimson);
+}
+
+.about .row .count-container .box p{
+    padding-top: 1rem;
+    font-size: 2rem;
+    color: var(--light-color);
+
+}
+
+.skills .box-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+        gap: 1.5rem;
+}
+
+.skills .box-container .box{
+    padding: 2rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    background: var(--light-bg);
+}
+
+.skills .box-container .box:hover{
+    background: var(--white);
+}
+
+.skills .box-container img{
+    height: 7rem;
+    margin-bottom: 1rem;
+}
+
+.skills .box-container h3{
+    color: var(--white);
+    font-size: 1.7rem;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+.education .box-container{
+      display: flex;
+      flex-wrap: wrap;
+}
+
+
+.education .box-container .box{
+    flex: 1 1 42rem;
+    margin-left: 2rem;
+    padding: 2rem;
+    padding-left: 3.5rem;
+    padding-bottom: 2rem;
+    border-left: .1rem solid var(--light-color);
+}
+
+.education .box-container .box i{
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    font-size: 1.7rem;
+    border-radius: 50%;
+    background: var(--crimson);
+    color: var(--white);
+    text-align: center;
+}
+
+.education .box-container .box span{
+    font-size: 1.7rem;
+    color: var(--white);
+    border-radius: 5rem;
+    padding: .5rem 1.5rem;
+    background: var(--light-bg);
+}
+.education .box-container .box p,h3 {
+    color: var(--white);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+
+    section{
+        padding:3rem 2rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .heading{
+        font-size: 12vw;
+         
+    }
+
+    .navbar a i {
+        padding: 0;
+    }
+
+    .navbar a span {
+        display: none;
+    }
+
+    .navbar:hover {
+        padding-bottom: 2rem;
+    }
+    .home{
+        text-align: center;
+        gap: 2rem;
+    }
+    .home .image img{
+        height: 30rem;
+        width: 30rem;
+    }
+    .home .content h3{
+        font-size: 3rem;
+    }
+
+    .home .content span{
+        font-size: 2.5rem;
+    }
+
+}
+
+ 
+
+
+
+
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+}
